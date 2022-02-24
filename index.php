@@ -9,7 +9,7 @@ $testo = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga ac
 
 $lunghezzaTesto = strlen($testo);
 
-$daCensurare = $_GET['parola']
+
 
 ?>
 
@@ -25,6 +25,7 @@ $daCensurare = $_GET['parola']
 <body>
   <p><?php echo $testo ?></p>
   <div><?php echo 'lunghezza testo: ' . $lunghezzaTesto . ' caratteri' ?></div>
-  <input type="text" placeholder="inserisci una parola da censurare">
+  <input type="text" placeholder="inserisci una parola da censurare" $word = $_GET ? $_GET['paroladacensuare'] : '';>
+  <button>invia</button>
 </body>
 </html>
